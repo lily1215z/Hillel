@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 const height = prompt("Write your height in centimeters");
 const mass = prompt("Write your mass in kilogrames");
