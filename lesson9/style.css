@@ -1,0 +1,80 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+h1 {
+    color: blue;
+    border-bottom: 2px solid blue;
+    padding-bottom: 10px;
+    margin-bottom: 55px;
+    display: inline-block;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slider-container {
+    overflow: hidden; 
+}
+
+.slider-track {
+    display: flex; 
+    align-items: center;
+    transition: .2s;
+}
+
+.slider-item img {
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.slider-buttons {
+    text-align: center; 
+}
+
+.btn-prev,
+.btn-next {
+    color: blue;
+    border: 2px solid blue;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    outline: none;
+}
+
+.btn-prev {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.btn-next {
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#modal {
+    min-width: 55%;
+    min-height: 55%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#removeButton {
+    top: 20%;
+    left: 74%;
+    transform: translate(-50%, -50%);
+    padding: 20px 30px;
+    background-color: rgba(157, 230, 74, .4);
+    position: absolute;
+    z-index: 5;
+    outline: none;
+    border: 1px solid green;
+    font-size: 20px;
+}
