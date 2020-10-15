@@ -1,0 +1,21 @@
+
+.text {
+    width: 400px;
+    padding: 15px;
+}
+.button {
+    padding: 15px;
+}
+.new-elements {
+    padding-left: 30px;
+    list-style: none;
+}
+
+.btn-del {
+    padding: 0 5px;
+    margin-left: 15px;
+}
+.taskCheckbox {
+    position: relative;
+    top: -17px;
+}
