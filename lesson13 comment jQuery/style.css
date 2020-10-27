@@ -1,0 +1,46 @@
+*,
+*:before,
+*:after {
+   box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+
+.form,
+.list {
+    margin: 0 auto;
+    width: 300px;
+}
+
+h2 {
+    text-align: center;
+    color: blue;
+}
+.name,
+.comment,
+.btn {
+    display: block;
+    margin-top: 20px;
+    width: 300px;
+    padding: 10px;
+}
+
+.comment {
+    resize: none;
+}
+
+.list {
+    margin-top: 20px;
+    position: relative;
+    display: block;
+}
+
+.btn-del {
+    position: absolute;
+    right: 0;
+}
+
+.comment-name {
+    background-color: pink;
+}
