@@ -1,0 +1,54 @@
+*,
+*:before,
+*:after {
+   box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+
+.form,
+.list {
+    margin: 0 auto;
+    width: 300px;
+}
+
+.name,
+.comment,
+.btn {
+    display: block;
+    margin-top: 20px;
+    width: 300px;
+    padding: 10px;
+}
+
+.comment {
+    resize: none;
+}
+
+.list {
+    margin-top: 20px;
+    position: relative;
+    display: block;
+}
+
+.btn-del {
+    position: absolute;
+    right: 0;
+}
+
+.comment-name {
+    background-color: pink;
+}
+.one {
+    background-color:pink;
+    padding: 5px;
+}
+.two {
+    background-color:yellow;
+    padding: 5px;
+}
+.three {
+    background-color:rgb(154, 231, 154);
+    padding: 5px;
+}
