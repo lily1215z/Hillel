@@ -44,3 +44,16 @@ h2 {
 .comment-name {
     background-color: pink;
 }
+.color-name {
+    padding: 5px;
+    background-color: pink;
+}
+.color-body {
+    padding: 5px;
+    background-color: yellow;
+}
+.color-time {
+    padding: 5px;
+    background-color: rgb(157, 233, 157);
+    margin-bottom: 50px;
+}
