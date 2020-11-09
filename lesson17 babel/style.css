@@ -1,0 +1,14 @@
+.one {
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 7px 30px;
+    margin: 0 auto;
+}
+.block {
+    width: 800px;
+    margin: 0 auto;
+}
+.one + .one {
+    margin-left: 15px;
+}
