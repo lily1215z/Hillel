@@ -1,0 +1,48 @@
+[
+    {
+      "id": "1",
+      "title": "Black friday",
+      "description": "We are clearing the our store. Swoop in",
+      "sale": "10%",
+      "start_date": "25.11.2020",
+      "end_date": "30.11.2020",
+      "image": "https://i.ibb.co/Fg56t34/5.jpg"
+    },
+    {
+      "id": "2",
+      "title": "New Year",
+      "description": "We are clearing the our store.",
+      "sale": "15%",
+      "start_date": "15.12.2020",
+      "end_date": "01.01.2021",
+      "image": "https://i.ibb.co/jJMcVd4/6.jpg"
+    },
+    {
+        "id": "3",
+        "title": "Christmas",
+        "description": "We are clearing the our store. Swoop in",
+        "sale": "10%",
+        "start_date": "05.01.2021",
+        "end_date": "14.01.2021",
+        "image": "https://i.ibb.co/Fg56t34/5.jpg"
+      },
+      { 
+        "id": "4",
+        "title": "Big Sale",
+        "description": "We are clearing the our store.",
+        "sale": "20%",
+        "start_date": "20.01.2021",
+        "end_date": "22.01.2021",
+        "image": "https://i.ibb.co/NtRxKHC/1.jpg"
+      },
+      {
+        "id": "1",
+        "title": "Black friday",
+        "description": "We are clearing the our store. Swoop in",
+        "sale": "10%",
+        "start_date": "25.11.2021",
+        "end_date": "30.11.2021",
+        "image": "https://i.ibb.co/jJMcVd4/6.jpg"
+      }
+  ]
+

@@ -1,0 +1,87 @@
+[
+    {
+        "id": "001",
+        "name": "Swarovski Ocean DeLite",
+        "img": "https://i.ibb.co/dmmLs6P/el1.png",
+        "price": 20,
+        "descr": "Does not cause allergies (hypoallergenic). Does not darken. Does not climb"
+    },
+    {
+        "id": "002",
+        "name": "Xuping Ring",
+        "img": "https://i.ibb.co/3sSM7Lv/el2.png",
+        "price": 18,
+        "descr": "Does not cause allergies (hypoallergenic). Does not darken. Does not climb "
+    },
+    {
+        "id": "003",
+        "name": "Xuping Ring",
+        "img": "https://i.ibb.co/VL3Hzyy/el3.png",
+        "price": 15,
+        "descr": "Does not cause allergies (hypoallergenic). Does not darken. Does not climb"
+    },
+    {
+        "id": "004",
+        "name": "Swarovski Ocean DeLite",
+        "img": "https://i.ibb.co/whwN8D6/001.png",
+        "price": 25,
+        "descr": "Does not cause allergies (hypoallergenic). Does not darken. Does not climb "
+    },
+    {
+        "id": "005",
+        "name": "Xuping Ring",
+        "img": "https://i.ibb.co/2FxPggw/002.png",
+        "price": 19,
+        "descr": "Does not cause allergies (hypoallergenic). Does not darken. Does not climb "
+    },
+    {
+        "id": "006",
+        "name": "Xuping Ring",
+        "img": "https://i.ibb.co/FxGHQDb/007.png",
+        "price": 22,
+        "descr": "Does not cause allergies (hypoallergenic). Does not darken. Does not climb"
+    },
+    {
+        "id": "007",
+        "name": "Swarovski Ocean DeLite",
+        "img": "https://i.ibb.co/BsYVWYV/008.png",
+        "price": 14,
+        "descr": "Does not cause allergies (hypoallergenic). Does not darken. Does not climb "
+    },
+    {
+        "id": "008",
+        "name": "Xuping Ring",
+        "img": "https://i.ibb.co/tQvDhJJ/009.png",
+        "price": 20,
+        "descr": "Does not cause allergies (hypoallergenic). Does not darken. Does not climb "
+    },
+    {
+        "id": "009",
+        "name": "Xuping Ring",
+        "img": "https://i.ibb.co/DCcZtYd/011.png",
+        "price": 15,
+        "descr": "Does not cause allergies (hypoallergenic). Does not darken. Does not climb"
+    },
+    {
+        "id": "010",
+        "name": "Swarovski Ocean DeLite",
+        "img": "https://i.ibb.co/Mc1Ff0D/005.png",
+        "price": 26,
+        "descr": "Does not cause allergies (hypoallergenic). Does not darken. Does not climb "
+    },
+    {
+        "id": "011",
+        "name": "Xuping Ring",
+        "img": "https://i.ibb.co/vZd26pz/012.png",
+        "price": 25,
+        "descr": "Does not cause allergies (hypoallergenic). Does not darken. Does not climb "
+    },
+    {
+        "id": "012",
+        "name": "Xuping Ring",
+        "img": "https://i.ibb.co/4fsqdJN/003.png",
+        "price": 24,
+        "descr": "Does not cause allergies (hypoallergenic). Does not darken. Does not climb"
+    }
+]
+

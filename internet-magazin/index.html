@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bloral brane</title>
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="api/images/favicon.png">
+  <!-- Constants and Utils должны быть над компонентами header, products, shopping чтоб они имели доступ к root.js-->
+  <script defer src="constants/root.js"></script>
+  <script defer src="utils/localStorageUtil.js"></script>
+
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="js/slick.min.js"></script>
+  <script defer src="js/scripte.js"></script>
+  <script defer src="https://kit.fontawesome.com/987d4f6dc8.js" crossorigin="anonymous"></script>
+  <!-- компонент Header -->
+  <script defer src="components/Header/Header.js"></script>
+  <link rel="stylesheet" href="components/Header/header.css">
+  <!-- компонент Producnts -->
+  <script defer src="components/Products/Products.js"></script>
+  <link rel="stylesheet" href="components/Products/Products.css">
+  <!-- компонент Shopping -->
+  <script defer src="components/Shopping/Shopping.js"></script>
+  <link rel="stylesheet" href="components/Shopping/Shopping.css">
+  <!-- компонент Spinner -->
+  <script defer src="components/Spinner/Spinner.js"></script>
+  <link rel="stylesheet" href="components/Spinner/Spinner.css">
+  <!-- компонент Error -->
+  <script defer src="components/Error/Error.js"></script>
+  <link rel="stylesheet" href="components/Error/Error.css">
+   <!-- компонент Sales -->
+   <script defer src="components/Sales/Sales.js"></script>
+   <link rel="stylesheet" href="components/Sales/Sales.css">
+      <!-- компонент Category -->
+    <script defer src="components/Category/Category.js"></script>
+    <link rel="stylesheet" href="components/Category/Category.css">
+
+  <script defer src="js/index.js"></script>
+  
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <header>
+        <div class="logo"><a href="./index.html"><img src="api/images/99.png" width="100" alt=""></a></div>
+        <!-- <form class="area">
+          <input type="text" />
+          <button>search</button>
+          </form> -->
+        <div class="title">You are incredebel with us!</div>
+        <div class="cart-login-block">
+          <div>
+            <button class="login open-popup" data-popup="popup1">Login</button>
+            <a class="cart open-popup" href="#" data-popup="popup3"><img class="cart-open" src="api/images/91ф.png"
+                alt="img"></a>
+          </div>
+          <div class="cart-counter"></div>
+        </div>
+      </header>
+
+      <div class="content-promo ">
+        <section>
+          <h5>Promotions</h5>
+          <div class="sales-slider">
+            <!-- <div class="sales__item">
+              <h3 class="sales__title">Black Friday</h3>
+              <p class="sales__descr">
+                We are clearing the our store. Swoop in
+              </p>
+              <div class="sales__persent">10%</div>
+              <span class="sales__startdate">from 25.11.2020</span>
+              <span class="sales__enddate">to 30.11.2020</span>
+            </div>
+            <div class="sales__item">
+              <h3 class="sales__title">New Year</h3>
+              <p class="sales__descr">
+                We are clearing the our store. Swoop in
+              </p>
+              <div class="sales__persent">10%</div>
+              <span class="sales__startdate">from 25.11.2020</span>
+              <span class="sales__enddate">to 30.11.2020</span>
+            </div>
+            <div class="sales__item">
+              <h3 class="sales__title">Christmas</h3>
+              <p class="sales__descr">
+                We are clearing the our store. Swoop in
+              </p>
+              <div class="sales__persent">10%</div>
+              <span class="sales__startdate">from 25.11.2020</span>
+              <span class="sales__enddate">to 30.11.2020</span>
+            </div>
+            <div class="sales__item">
+              <h3 class="sales__title">Black Friday</h3>
+              <p class="sales__descr">
+                We are clearing the our store. Swoop in
+              </p>
+              <div class="sales__persent">10%</div>
+              <span class="sales__startdate">from 25.11.2020</span>
+              <span class="sales__enddate">to 30.11.2020</span>
+            </div>
+            <div class="sales__item">
+              <h3 class="sales__title">New Year</h3>
+              <p class="sales__descr">
+                We are clearing the our store. Swoop in
+              </p>
+              <div class="sales__persent">10%</div>
+              <span class="sales__startdate">from 25.11.2020</span>
+              <span class="sales__enddate">to 30.11.2020</span>
+            </div> -->
+            <div id="sales"></div>
+          </div>
+          
+        </section>
+
+        <section class="">
+          <h5>Categories</h5>
+          <div class="categories">
+            <!-- <ul>
+              <li class="list"><a class="link" href="./products.html?id=1">Earrings</a></li>
+              <li class="list"><a class="link" href="./products.html?id=2">Rings</a></li>
+              <li class="list"><a class="link" href="./products.html?id=3">Chains</a></li>
+              <li class="list"><a class="link" href="./products.html?id=4">Bracelets</a></li>
+              <li class="list"><a class="link" href="./products.html?id=5">Pendants</a></li>
+            </ul>
+            <ul>
+              <li class="list"><a class="link" href="./products.html?id=6">Belts</a></li>
+              <li class="list"><a class="link" href="./products.html?id=7">Sets</a></li>
+              <li class="list"><a class="link" href="./products.html?id=8">Necklace</a></li>
+              <li class="list"><a class="link" href="./products.html?id=9">Brooch</a></li>
+              <li class="list"><a class="link" href="./products.html?id=10">Hairpins</a></li>
+            </ul> -->
+            <div id="category"></div>
+          </div>
+        </section>
+        <section>
+          <h5>Recommended products</h5>
+          <!-- каталог товаров -->
+          <div id="products"></div>
+          <!-- сама корзина -->
+          <div id="shopping"></div>
+          <div id="spinner"></div>
+          <div id="error"></div>
+        </section>
+      </div>
+
+
+    </div>
+    <footer class="footer">
+      <div class="title">Bloral brane™ 2020</div>
+      <div class="social">
+        <a href="https://www.facebook.com/" target="blank"><img src="api/images/social/Facebook.png" alt="facebook"></a>
+        <a href="https://www.youtube.com/" target="blank"><img src="api/images/social/Youtube.png" alt="youtube"></a>
+        <a href="https://www.linkedin.com" target="blank"><img src="api/images/social/Linkedin.png" alt="in"></a>
+        <a href="https://twitter.com/?lang=ru" target="blank"><img src="api/images/social/Twitter.png"
+            alt="twitter"></a>
+        <a href="https://www.pinterest.com/" target="blank"><img src="api/images/social/Pinterest.png" alt="pin"></a>
+        <a href="https://dribbble.com/" target="blank"><img src="api/images/social/Dribbble.png" alt="Dribbble"></a>
+      </div>
+    </footer>
+  </div>
+
+  <section id="popup1" class="modal-wrapper">
+    <div class="modal">
+      <form action="#" class="form" name="login">
+        <div class="form-control">
+          <label class="label">
+            <div class="label-name">Login</div>
+            <input type="text" name="login" class="username" placeholder="write your name">
+          </label>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label class="label">
+            <div class="label-name">Password</div>
+            <input type="text" name="password" class="password" placeholder="write your password">
+          </label>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation"></i>
+          <small>Error message</small>
+        </div>
+        <button class="btn">Submit</button>
+        <button class="btn open-popup" data-popup="popup2">Registration</button>
+        <button type="button" class="close"></button>
+      </form>
+    </div>
+  </section>
+
+  <section id="popup2" class="modal-wrapper">
+    <div class="modal">
+      <form action="#" class="form" id="form" name="registr">
+        <div class="form-control">
+          <label class="label">
+            <div class="label-name">Name</div>
+            <input type="text" name="username" class="username" placeholder="write your name">
+          </label>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label class="label">
+            <div class="label-name">Login</div>
+            <input type="text" name="login" class="login" placeholder="write your login">
+          </label>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label class="label">
+            <div class="label-name">Password</div>
+            <input type="text" name="password" class="password" placeholder="write your password">
+          </label>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label class="label">
+            <div class="label-name">Repeat password</div>
+            <input type="text" name="password2" class="password2" placeholder="write your password yet">
+          </label>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation"></i>
+          <small>Error message</small>
+        </div>
+        <button class="btn">Registration</button>
+        <button type="button" class="close"></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Корзина -->
+  <!-- <section id="popup3" class="modal-wrapper">
+    <div class="cart-section">
+      <h4 class="cart-title--main">Shopping bag</h4>
+      <div class="cart-box">
+        <img src="api/images/99.png" width="70" alt="">
+        <p class="cart-title">Xuping Odessa</p>
+        <div>
+          <button class="plus" data-id="art">+</button>
+          <button class="minus" data-id="art">-</button>
+        </div>
+        <button class="cart-del"></button>
+      </div>
+
+      <div class="cart-box">
+        <img src="api/images/90a.png" width="70" alt="">
+        <p class="cart-title">Gold Odessa2</p>
+        <div>
+          <button class="plus" data-id="art2">+</button>
+          <button class="minus" data-id="art2">-</button>
+        </div>
+        <button class="cart-del"></button>
+      </div>
+      <button class="btn">BUY</button>
+      <button class="close"></button>
+    </div>
+  </section> -->
+
+
+</body>
+
+</html>

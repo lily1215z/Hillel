@@ -1,0 +1,368 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 24px;
+}
+.logo img {
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.title {
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100px;
+  background-color: rgb(51, 51, 214);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+header form {
+  min-width: 50%;
+  display: flex;
+}
+
+header form input {
+  flex: 1 1 auto;
+}
+ul {
+  list-style-type: none;
+}
+ul li {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0px -1px 46px -1px rgba(16, 48, 169, 0.57) inset;
+}
+h5 {
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+}
+h5::before {
+  content: "";
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 2px;
+  background-color: blue;
+  
+}
+.link {
+  text-decoration: none;
+  padding: 0 15px;
+  color: #000;
+  font-style: italic;
+  transition: all .3s;
+  font-weight: 500;
+}
+.link:hover {
+  color: blue;
+}
+
+.content-promo {
+  flex: 1 1 auto;
+  align-items: flex-start;
+  max-width: 1400px;
+  padding: 0 15px;
+  margin: 120px auto 0;
+  width: 100%;
+}
+
+footer {
+  min-height: 5rem;
+}
+.login {
+  padding: 7px 25px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-right: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: -2px 0px 2px 5px rgba(255, 255, 255, 0.2);
+}
+/* .login:hover {
+  color: blue;
+} */
+.area {
+  border: 1px solid black;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+.cart {
+  color: #000;
+  position: relative;
+  top: 15px;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-around;
+}
+
+.recommended-products {
+  display: flex;
+  
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  align-items: flex-start;
+}
+
+.product-img {
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+}
+
+.products-content {
+  display: flex;
+  align-items: stretch;
+  margin-top: 100px;
+}
+
+.products {
+  flex: 1 1 auto;
+}
+
+.filters form {
+  display: flex;
+  flex-direction: column;
+}
+
+.products-list {
+  display: flex;
+}
+
+.item-info {
+  display: flex;
+  align-items: stretch;
+}
+
+.item-info > * {
+  flex: 1 1 50%;
+}
+
+.thumbs {
+  width: 100%;
+  display: flex;
+}
+
+.thumbs > button {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.thumbs > button > img {
+  width: 100%;
+  height: 100%;
+}
+
+.item-slider {
+  width: 100%;
+  display: flex;
+}
+
+.item-slider > div {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review > .title {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(230, 230, 230);
+}
+.footer {
+  background-color: rgb(51, 51, 214);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top: 20px;
+  text-align: center;
+  font-style: italic;
+  padding-bottom: 30px;
+  padding-top: 15px;
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+/* Modal */
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 350px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid grey;
+  padding: 60px 30px 0px;
+  border-radius: 5px;
+  z-index: 12;
+}
+.modal-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.label {
+  font-style: italic;
+  font-size: 20px;
+  position: relative;
+}
+.label-name {
+  position: absolute;
+  top: -26px;
+  left: 10px;
+  background-color: #fff;
+  padding: 0 10px;
+  z-index: 12;
+}
+.label input{
+  padding: 20px 15px 10px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  opacity: 0.5;
+  margin-bottom: 40px;
+  width: 100%;
+}
+.btn {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px 0;
+  background-color: rgb(51, 51, 214);
+  color: #fff;
+  border: 1px solid rgb(51, 51, 214);
+  font-size: 16px;
+  transition: all 0.3s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #fff;
+  color: rgb(51, 51, 214);
+  border: 1px solid rgb(51, 51, 214);
+}
+.close {
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+.close::before {
+  content: url(../api/images/social/close1.png);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+}
+.registration.modal {
+  max-width: 400px;
+}
+
+/* валидация формы */
+
+.form-control {
+  position: relative;
+}
+.form-control.success input {
+  border-color: green;
+}
+.form-control.error input {
+  border-color: red;
+}
+.form-control i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  visibility: hidden;
+}
+.form-control.success i.fa-check-circle {
+  color: green;
+  visibility: visible;
+}
+.form-control.error i.fa-exclamation {
+  color: red;
+  visibility: visible;
+}
+.form-control small {
+  visibility: hidden;
+  position: absolute;
+  bottom: 22px;
+  left: 0;
+}
+.form-control.error small {
+  color: red;
+  visibility: visible;
+  font-size: 12px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: linear-gradient(259deg, rgba(2,0,36,1) 0%, rgba(96,96,228,1) 35%, rgba(0,212,255,1) 100%);
+}
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
