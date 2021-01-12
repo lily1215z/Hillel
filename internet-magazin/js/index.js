@@ -3,14 +3,15 @@
 function render() {
     const productsStore = localStorageUtil.getProducts();
 
-    headerPage.render(productsStore.length);
-    productsPage.render();
+    headerPage.render(productsStore.length); //выводит кол-во товаров в корзине
+    productsPage.render(); 
     salesPage.render();
     categoryPage.render();
 }
 //запускаем спинер
 spinnerPage.render();
 let CATALOG = [];
+
 
 
 //fetch возвращает промис поэтому использовать можем then/catch
@@ -49,6 +50,8 @@ fetch('server/sales.json')
         errorPage.render();
 });
 
+
+
 //--------Вызываем Категории
 let category = [];
 
@@ -61,4 +64,13 @@ fetch('server/category.json')
     .catch(error => {
         spinnerPage.handleClear();
         errorPage.render();
+});
+
+
+$('.sales-slider').slick({
+    dots:true,
+    arrows:true,
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
 });

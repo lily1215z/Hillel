@@ -12,6 +12,8 @@
   <script defer src="constants/root.js"></script>
   <script defer src="utils/localStorageUtil.js"></script>
 
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="js/slick.min.js"></script>
   <script defer src="js/scripte.js"></script>
   <script defer src="https://kit.fontawesome.com/987d4f6dc8.js" crossorigin="anonymous"></script>
   <!-- компонент Header -->
@@ -23,13 +25,19 @@
   <!-- компонент Shopping -->
   <script defer src="components/Shopping/Shopping.js"></script>
   <link rel="stylesheet" href="components/Shopping/Shopping.css">
-   <!-- компонент Spinner -->
-   <script defer src="components/Spinner/Spinner.js"></script>
-   <link rel="stylesheet" href="components/Spinner/Spinner.css">
-   <!-- компонент Error -->
-   <script defer src="components/Error/Error.js"></script>
-   <link rel="stylesheet" href="components/Error/Error.css">
-  
+  <!-- компонент Spinner -->
+  <script defer src="components/Spinner/Spinner.js"></script>
+  <link rel="stylesheet" href="components/Spinner/Spinner.css">
+  <!-- компонент Error -->
+  <script defer src="components/Error/Error.js"></script>
+  <link rel="stylesheet" href="components/Error/Error.css">
+  <!-- компонент Sales -->
+  <script defer src="components/Sales/Sales.js"></script>
+  <link rel="stylesheet" href="components/Sales/Sales.css">
+  <!-- компонент Category -->
+  <script defer src="components/Category/Category.js"></script>
+  <link rel="stylesheet" href="components/Category/Category.css">
+
   <script defer src="js/index.js"></script>
 </head>
 
@@ -42,90 +50,122 @@
         <div class="cart-login-block">
           <div>
             <button class="login open-popup" data-popup="popup1">Login</button>
-            <a class="cart open-popup" href="#" data-popup="popup3"><img class="cart-open" src="api/images/91ф.png" alt="img"></a>
+            <a class="cart open-popup" href="#" data-popup="popup3"><img class="cart-open" src="api/images/91ф.png"
+                alt="img"></a>
           </div>
           <div class="cart-counter"></div>
         </div>
       </header>
-      <div class="content area products-content">
-        <div class="filters area">
-          <h5>Filters</h5>
-          <form>
-            <div class="area">
-              <label for="">sort by: </label>
-              <select name="sort by" id="">
-                <option value="">Rating</option>
-                <option value="">Price low to high</option>
-                <option value="">Price high to low</option>
-                <option value="">Brand A-Z</option>
-                <option value="">Brand Z-A</option>
-                <option value="">New arrivals</option>
-              </select>
-            </div>
-            <div class="area">
-              <label for="">brand</label>
-              <div><input type="checkbox" name="" id="" />brand 1</div>
-              <div><input type="checkbox" name="" id="" />brand 2</div>
-              <div><input type="checkbox" name="" id="" />brand 3</div>
-              <div><input type="checkbox" name="" id="" />brand 4</div>
-              <div><input type="checkbox" name="" id="" />brand 5</div>
-            </div>
-            <div class="area">
-              <div>price</div>
-              <label for="">from</label>
-              <input type="number" />
-              <label for="">to</label>
-              <input type="number" />
-            </div>
-            <button>apply</button>
-          </form>
-        </div>
-        <div class="products area">
-          <h5>[Category name]</h5>
-          <div class="area products-list">
-            <div class="product area">
-              <div class="area product-img">
-                <img src="https://freepngimg.com/thumb/samsung_mobile_phone/5-2-samsung-mobile-phone-png-hd-thumb.png"
-                  alt="product name" />
+
+      <div class="container">
+        <div class="content products-content">
+          <div class="filters">
+            <h5>Search</h5>
+            <form>
+              <input class="search-input" type="text" placeholder="Type to search">
+              <button class="filter-btn">search</button>
+              <!-- <ul class="elastic">
+                <li>xuping</li>
+                <li>jewerly</li>
+                <li>gallaxy</li>
+                <li>gold</li>
+                <li>amet</li>
+                <li>sit</li>
+                <li>dolor</li>
+                <li>teorema</li>
+                <li>grid</li>
+                <li>display</li>
+              </ul> -->
+            </form>
+            <h5>Filters</h5>
+            <form>
+              <div class="filter">
+                <label class="filter-name" for="">Sort by: </label>
+                <select class="filter-select" name="sort by" id="">
+                  <option value="">Rating</option>
+                  <option value="">Price low to high</option>
+                  <option value="">Price high to low</option>
+                  <option value="">Brand A-Z</option>
+                  <option value="">Brand Z-A</option>
+                  <option value="">New arrivals</option>
+                </select>
               </div>
-              <a href="./item_info.html?id=1">product name</a>
-              <div>product description</div>
-              <div>Price: 100$</div>
-              <button>add to cart</button>
-            </div>
-            <div class="product area">
-              <div class="area product-img">
-                <img src="https://freepngimg.com/thumb/samsung_mobile_phone/5-2-samsung-mobile-phone-png-hd-thumb.png"
-                  alt="product name" />
+              <div class="filter">
+                <label class="filter-name" for="">Brand</label>
+                <div class="filter-brand"><input type="checkbox" name="Xuping" id="" />Xuping</div>
+                <div class="filter-brand"><input type="checkbox" name="Swarovski" id="" />Swarovski</div>
+                <div class="filter-brand"><input type="checkbox" name="Fallon" id="" />Fallon</div>
+                <div class="filter-brand"><input type="checkbox" name="M&L" id="" />M&L</div>
+                <div class="filter-brand"><input type="checkbox" name="Jewerly" id="" />Jewerly</div>
               </div>
-              <a href="./item_info.html?id=1">product name</a>
-              <div>product description</div>
-              <div>Price: 100$</div>
-              <button>add to cart</button>
-            </div>
-            <div class="product area">
-              <div class="area product-img">
-                <img src="https://freepngimg.com/thumb/samsung_mobile_phone/5-2-samsung-mobile-phone-png-hd-thumb.png"
-                  alt="product name" />
+              <div class="filter">
+                <div class="filter-name">Price</div>
+                <label class="filter-name" for="">From</label>
+                <input class="filter-number" type="number" />
+                <label class="filter-name" for="">to</label>
+                <input class="filter-number" type="number" />
               </div>
-              <a href="./item_info.html?id=1">product name</a>
-              <div>product description</div>
-              <div>Price: 100$</div>
-              <button>add to cart</button>
-            </div>
-            <div class="product area">
-              <div class="area product-img">
-                <img src="https://freepngimg.com/thumb/samsung_mobile_phone/5-2-samsung-mobile-phone-png-hd-thumb.png"
-                  alt="product name" />
-              </div>
-              <a href="./item_info.html?id=1">product name</a>
-              <div>product description</div>
-              <div>Price: 100$</div>
-              <button>add to cart</button>
-            </div>
+              <button class="filter-btn">apply</button>
+            </form>
+          </div>
+          <div class="products">
+            <h5>[Category name]</h5>
+            <ul class="products-container">
+              <li class="products-element">
+                <a href="./item_info.html?id=1">product name</a>
+                <img class="products-element__img" src="https://i.ibb.co/tQvDhJJ/009.png" alt="009">
+                <div class="products-element__descr">Does not cause allergies (hypoallergenic). Does not darken. Does
+                  not climb</div>
+                <div class="products-element__price">Price: 100$</div>
+                <button class="btn products-element__btn">add to cart</button>
+              </li>
+              <li class="products-element">
+                <a href="./item_info.html?id=1">product name</a>
+                <img class="products-element__img" src="https://i.ibb.co/dmmLs6P/el1.png" alt="el1">
+                <div class="products-element__descr">Does not cause allergies (hypoallergenic). Does not darken. Does
+                  not climb</div>
+                <div class="products-element__price">Price: 100$</div>
+                <button class="btn products-element__btn">add to cart</button>
+              </li>
+              <li class="products-element">
+                <a href="./item_info.html?id=1">product name</a>
+                <img class="products-element__img" src="https://i.ibb.co/FxGHQDb/007.png" alt="007">
+                <div class="products-element__descr">Does not cause allergies (hypoallergenic). Does not darken. Does
+                  not climb</div>
+                <div class="products-element__price">Price: 100$</div>
+                <button class="btn products-element__btn">add to cart</button>
+              </li>
+              <li class="one products-element">
+                <a href="./item_info.html?id=1">product name</a>
+                <img class="products-element__img" src="https://i.ibb.co/whwN8D6/001.png" alt="001">
+                <div class="products-element__descr">Does not cause allergies (hypoallergenic). Does not darken. Does
+                  not climb</div>
+                <div class="products-element__price">Price: 100$</div>
+                <button class="btn products-element__btn">add to cart</button>
+              </li>
+              <li class="one products-element">
+                <a href="./item_info.html?id=1">product name</a>
+                <img class="products-element__img" src="https://i.ibb.co/92wGkqh/004.png" alt="004">
+                <div class="products-element__descr">Does not cause allergies (hypoallergenic). Does not darken. Does
+                  not climb</div>
+                <div class="products-element__price">Price: 100$</div>
+                <button class="btn products-element__btn">add to cart</button>
+              </li>
+              <li class="products-element">
+                <a href="./item_info.html?id=1">product name</a>
+                <img class="products-element__img" src="https://i.ibb.co/vZd26pz/012.png" alt="012">
+                <div class="products-element__descr">Does not cause allergies (hypoallergenic). Does not darken. Does
+                  not climb</div>
+                <div class="products-element__price">Price: 100$</div>
+                <button class="btn products-element__btn">add to cart</button>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+
+  
+
 
       <div id="shopping"></div>
 

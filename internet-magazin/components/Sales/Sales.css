@@ -1,89 +1,89 @@
-.sales-slider ul li{
-    /* box-shadow: none; */
-  }
-  .sales-slider {
-    /* background-image: url(../../api/images/2.jpg); */
-    background-repeat: no-repeat;
-    background-size: contain;
-    min-height: 500px;
-    color: #fff;
-    position: relative;
-    margin-bottom: 90px;
-  }
-  .sales-slider .slick-dots {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    position: absolute;
-    bottom: -75px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .sales-slider .slick-dots button {
-    font-size: 0;
-    width: 10px;
-    height: 10px;
-    border: none;
-    background-color: #BEDAD8;
-    border-radius: 50%;
-  }
-  .sales-slider .slick-dots li {
-    margin-left: 20px;
-  }
-  .sales-slider .slick-dots li:first-child {
-    margin-left: 0;
-  }
-  .slick-dots .slick-active {
-    background-color: blue;
-  }
-  
-  .slick-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 0;
-    border: none;
-    outline: transparent;
-    width: 44px;
-    height: 44px;
-    background-color: transparent;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 6;
-  }
-  
-  .slick-arrow.slick-next {
-    background-image: url(../api/images/left-arrow.png);
-    left: 20px;
-  }
-  
-  .slick-arrow.slick-prev {
-    background-image: url(../api/images/right-arrow.png);
-    right: 20px;
-  }
+.sales-slider ul li {
+  /* box-shadow: none; */
+}
+.sales-slider {
+  /* background-image: url(../../api/images/2.jpg); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 500px;
+  color: #fff;
+  position: relative;
+  margin-bottom: 90px;
+}
+.sales-slider .slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  bottom: -75px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* вместо button вписать li */
+.sales-slider .slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  border: none;
+  background-color: #bedad8;
+  border-radius: 50%;
+}
+.sales-slider .slick-dots li {
+  margin-left: 20px;
+}
+.sales-slider .slick-dots li:first-child {
+  margin-left: 0;
+}
+.slick-dots .slick-active {
+  background-color: blue;
+}
 
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0;
+  border: none;
+  outline: transparent;
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 6;
+}
+
+.slick-arrow.slick-next {
+  background-image: url(../api/images/left-arrow.png);
+  left: 20px;
+}
+
+.slick-arrow.slick-prev {
+  background-image: url(../api/images/right-arrow.png);
+  right: 20px;
+}
 
 .sales__item {
-    text-align: center;
-    padding: 50px 0;
+  text-align: center;
+  padding: 50px 0;
 }
 .sales__title {
-    font-size: 80px;
-    font-weight: 900;
-    margin: 15px 0;
+  font-size: 80px;
+  font-weight: 900;
+  margin: 15px 0;
 }
 .sales__descr {
-    font-size: 40px;
-    margin-bottom: 20px;
-    font-weight: 900;
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 900;
 }
 .sales__persent {
-    font-size: 60px;
-    color: red;
-    font-weight: 900;
-    margin-bottom: 20px;
+  font-size: 60px;
+  color: red;
+  font-weight: 900;
+  margin-bottom: 20px;
 }
 .sales__startdate,
 .sales__enddate {
-    font-size: 30px;
+  font-size: 30px;
 }

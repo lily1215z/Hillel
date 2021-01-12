@@ -22,3 +22,4 @@ class Sales {
 }
 
 const salesPage = new Sales();
+

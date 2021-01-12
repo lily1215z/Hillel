@@ -58,3 +58,6 @@
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 1;
   }
+  .cart-price {
+    font-size: 16px;
+  }

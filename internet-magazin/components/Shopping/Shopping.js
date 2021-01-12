@@ -18,6 +18,7 @@ class Shopping {
                         <div class="cart-box">
                             <img src="${img}">
                             <p class="cart-title">${name}</p>
+                            <div class="cart-price">${price}$</div>
                             <div>
                                 <button class="plus" data-id="art">+</button>
                                 <button class="minus" data-id="art">-</button>
@@ -45,5 +46,4 @@ class Shopping {
 }
 
 const shoppingPage = new Shopping();
-
 

@@ -6,7 +6,8 @@
     },
     {
       "id": "category2",
-      "name": "Rings"
+      "name": "Rings",
+      "path": "../products.html"
     },
     {
       "id": "category3",
