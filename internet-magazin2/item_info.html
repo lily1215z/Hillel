@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Item info</title>
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="api/images/favicon.png">
+  <!-- Constants and Utils должны быть над компонентами header, products, shopping чтоб они имели доступ к root.js-->
+  <script defer src="constants/root.js"></script>
+  <script defer src="utils/localStorageUtil.js"></script>
+
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="js/slick.min.js"></script>
+  <script defer src="js/scripte.js"></script>
+  <script defer src="https://kit.fontawesome.com/987d4f6dc8.js" crossorigin="anonymous"></script>
+  <!-- компонент Header -->
+  <script defer src="components/Header/Header.js"></script>
+  <link rel="stylesheet" href="components/Header/header.css">
+  <!-- компонент Producnts -->
+  <script defer src="components/Products/Products.js"></script>
+  <link rel="stylesheet" href="components/Products/Products.css">
+  <!-- компонент Shopping -->
+  <script defer src="components/Shopping/Shopping.js"></script>
+  <link rel="stylesheet" href="components/Shopping/Shopping.css">
+  <!-- компонент Spinner -->
+  <script defer src="components/Spinner/Spinner.js"></script>
+  <link rel="stylesheet" href="components/Spinner/Spinner.css">
+  <!-- компонент Error -->
+  <script defer src="components/Error/Error.js"></script>
+  <link rel="stylesheet" href="components/Error/Error.css">
+  <!-- компонент Sales -->
+  <script defer src="components/Sales/Sales.js"></script>
+  <link rel="stylesheet" href="components/Sales/Sales.css">
+  <!-- компонент Category -->
+  <script defer src="components/Category/Category.js"></script>
+  <link rel="stylesheet" href="components/Category/Category.css">
+
+  <script defer src="js/index.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <header>
+        <div class="logo"><a href="./index.html"><img src="api/images/99.png" width="100" alt=""></a></div>
+        <div class="title">You are incredebel with us!</div>
+        <div class="cart-login-block">
+          <div>
+            <button class="login open-popup" data-popup="popup1">Login</button>
+            <a class="cart open-popup" href="#" data-popup="popup3"><img class="cart-open" src="api/images/91ф.png"
+                alt="img"></a>
+          </div>
+          <div class="cart-counter"></div>
+        </div>
+      </header>
+
+      <div class="container">
+        <div class="content block-info">
+          <h1>Brand model</h1>
+          <div class="item-info">
+            <div class="item-info__img">
+              <div class="item-slider">
+                <button></button>
+                <div class="area">
+                  <img src="https://freepngimg.com/thumb/samsung_mobile_phone/5-2-samsung-mobile-phone-png-hd-thumb.png"
+                    alt="">
+                </div>
+                <button>></button>
+              </div>
+              <div class="thumbs">
+                <button><img
+                    src="https://freepngimg.com/thumb/samsung_mobile_phone/5-2-samsung-mobile-phone-png-hd-thumb.png"
+                    alt=""></button>
+                <button><img
+                    src="https://freepngimg.com/thumb/samsung_mobile_phone/5-2-samsung-mobile-phone-png-hd-thumb.png"
+                    alt=""></button>
+                <button><img
+                    src="https://freepngimg.com/thumb/samsung_mobile_phone/5-2-samsung-mobile-phone-png-hd-thumb.png"
+                    alt=""></button>
+                <button><img
+                    src="https://freepngimg.com/thumb/samsung_mobile_phone/5-2-samsung-mobile-phone-png-hd-thumb.png"
+                    alt=""></button>
+                <button><img
+                    src="https://freepngimg.com/thumb/samsung_mobile_phone/5-2-samsung-mobile-phone-png-hd-thumb.png"
+                    alt=""></button>
+              </div>
+            </div>
+            <div class="item-info__text">
+              <div>Brand: Xuping</div>
+              <div>Model: jewerly</div>
+              <div>Price: 35$</div>
+              <div>Available: yes</div>
+              <div>Rating: 3.4</div>
+              <div>The minimum order amount is 30 y.e</div>
+              <label for="quantity">Quantity:
+                <input type="number" value="1" name="" id="quantity">
+              </label>
+              <button class="btn">add to cart</button>
+            </div>
+          </div>
+          <div class="more-info">
+            <div class="more-info-btn open-popup" data-popup="popup4">Delivery and payment </div>
+            <div class="more-info-btn open-popup" data-popup="popup5">Opening hours </div>
+            <div class="more-info-btn open-popup" data-popup="popup6">Address and contacts</div>
+            <div class="more-info-btn open-popup" data-popup="popup7">Return condition</div>
+          </div>
+          <div class="accordion-block">
+            <div class="accordion-title">Overview</div>
+            <div class="accordion-body">
+              <div class="overview-text">
+                <h4>SWAROVSKI - LEADING ACCESSORIES</h4>
+                <p>
+                  Everyone knows firsthand what and who is talking about when the word Swarovski is mentioned. It has
+                  recently become very popular in every part of the world. Only a baby does not know about him, and
+                  then,
+                  stopping his gaze on the ears of his mother, who has put on Swarovski earrings, he probably thinks:
+                  “Aha! These are not simple earrings. Undergrowth, I'll figure it out. "
+                  And as he grows up, he will begin to understand what jewelry is and “what they eat with”, and his
+                  choice
+                  will definitely fall on jewelry from Swarovski. He will be among the like-minded people - connoisseurs
+                  and idols of this famous name. Because Swarovski is history. This is the man who made a revolution in
+                  the field of jewelry. This is a man who stepped over everyone who tried to imitate him. Stepped over
+                  in
+                  a good way. God gave him talent, which Daniel Swarovski used for his intended purpose and never
+                  stumbled.
+                </p>
+
+                <p>
+                  The jeweler has created a worthy competition for precious stones. In the epochal 20th century, his
+                  works
+                  of art adorned the greatest personalities - world-famous actors (Merlin Monroe, Brigitte Bardot) and
+                  statesmen represented by women (Margaret Thatcher, Indira Gandhi).
+                  Today Swarovski crystals are the leaders in the jewelry sales market. For the second century, master
+                  jewelers have been creating rings, bracelets, Swarovski earrings, more precisely, all the name of
+                  jewelry that exists. For all this time, an uncountable number of product models have been invented.
+                  Roughly speaking, there is one model for every girl in the world, if not more. Each product has its
+                  own
+                  flavor, with its own "I". Everything is in unrealistic demand, but such jewelry as earrings has a
+                  certain character.
+                  There are enough reasons for this.
+                </p>
+
+                <p>
+                  It would be dishonest to ignore the fact that earrings are the most ancient jewelry. When examining
+                  the
+                  many found Egyptian tombs, earrings were discovered in them.
+                  Not so long ago, a survey was conducted in one of the social networks on the topic "What jewelry do
+                  you
+                  prefer?" Earrings were in the lead, of course. Albeit with a small margin from the rest of the
+                  decorations.
+                  The most interesting thing is that some people even pointed out - Swarovski earrings. This fact once
+                  again confirms that Swarovski has secured his success for many, many years.
+                  Earrings with Swarovski crystals prevail in our online store. You can verify this by placing an order
+                  with us.
+                  From now on, choosing jewelry and, in particular, earrings, everyone will know in which direction to
+                  move: Swarovski crystals and rhinestones - the future belongs to them!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-block">
+            <div class="accordion-title">Specifications</div>
+            <div class="accordion-body">
+              <table>
+                <tr class="specific-box">
+                  <td class="specific-row">The code:</td>
+                  <td>759863</td>
+                </tr>
+                <tr class="specific-box">
+                  <td class="specific-row">Gender:</td>
+                  <td>female</td>
+                </tr>
+                <tr class="specific-box">
+                  <td class="specific-row">Coverage:</td>
+                  <td>💍18K
+                    <sup class="specific-answer">?
+                      <div class="answer-text">18 carat - 750 standard = 75% gold in the alloy</div>
+                    </sup>
+                  </td>
+                </tr>
+                <tr class="specific-box">
+                  <td class="specific-row">Base:</td>
+                  <td>copper alloy</td>
+                </tr>
+                <tr class="specific-box">
+                  <td class="specific-row">Inlay:</td>
+                  <td>synthetic stone Zirconium or Cubic zirconia</td>
+                </tr>
+                <tr class="specific-box">
+                  <td class="specific-row">Surface:</td>
+                  <td>gold plated</td>
+                </tr>
+                <tr class="specific-box">
+                  <td class="specific-row">Does not cause:</td>
+                  <td>hypoallergenic</td>
+                </tr>
+                <tr class="specific-box">
+                  <td class="specific-row"> Does not darken::</td>
+                  <td>does not cover</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="accordion-block">
+            <div class="accordion-title">Reviews</div>
+            <div class="accordion-body">js
+
+              <!-- <div class="review area">
+                <div class="title area">
+                  <div>User name</div>
+                  <div>[date]</div>
+                </div>
+                <div class="body area">
+                  Comment Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quibusdam, veniam ad corporis
+                  suscipit nam eius totam impedit, quo quia soluta ea non dicta quod reiciendis rerum, unde aliquid
+                  iste?
+                </div>
+                <div class="rating area">rating 3/10</div>
+              </div>
+              <div class="review area">
+                <div class="title area">
+                  <div>User name</div>
+                  <div>[date]</div>
+                </div>
+                <div class="body area">
+                  Comment Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quibusdam, veniam ad corporis
+                  suscipit nam eius totam impedit, quo quia soluta ea non dicta quod reiciendis rerum, unde aliquid
+                  iste?
+                </div>
+                <div class="rating area">rating 3/10</div>
+              </div>
+              <div class="review area">
+                <div class="title area">
+                  <div>User name</div>
+                  <div>[date]</div>
+                </div>
+                <div class="body area">
+                  Comment Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quibusdam, veniam ad corporis
+                  suscipit nam eius totam impedit, quo quia soluta ea non dicta quod reiciendis rerum, unde aliquid
+                  iste?
+                </div>
+                <div class="rating area">rating 3/10</div>
+              </div>
+              <div class="review area">
+                <div class="title area">
+                  <div>User name</div>
+                  <div>[date]</div>
+                </div>
+                <div class="body area">
+                  Comment Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quibusdam, veniam ad corporis
+                  suscipit nam eius totam impedit, quo quia soluta ea non dicta quod reiciendis rerum, unde aliquid
+                  iste?
+                </div>
+                <div class="rating area">rating 3/10</div>
+              </div>
+              <div class="review area">
+                <div class="title area">
+                  <div>User name</div>
+                  <div>[date]</div>
+                </div>
+                <div class="body area">
+                  Comment Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quibusdam, veniam ad corporis
+                  suscipit nam eius totam impedit, quo quia soluta ea non dicta quod reiciendis rerum, unde aliquid
+                  iste?
+                </div>
+                <div class="rating area">rating 3/10</div>
+              </div> -->
+            </div>
+          </div>
+          </section>
+
+
+
+
+        </div>
+      </div>
+
+
+      <div id="shopping"></div>
+
+    </div>
+    <footer class="footer">
+      <div class="title">Bloral brane™ 2020</div>
+      <div class="social">
+        <a href="https://www.facebook.com/" target="blank"><img src="api/images/social/Facebook.png" alt="facebook"></a>
+        <a href="https://www.youtube.com/" target="blank"><img src="api/images/social/Youtube.png" alt="youtube"></a>
+        <a href="https://www.linkedin.com" target="blank"><img src="api/images/social/Linkedin.png" alt="in"></a>
+        <a href="https://twitter.com/?lang=ru" target="blank"><img src="api/images/social/Twitter.png"
+            alt="twitter"></a>
+        <a href="https://www.pinterest.com/" target="blank"><img src="api/images/social/Pinterest.png" alt="pin"></a>
+        <a href="https://dribbble.com/" target="blank"><img src="api/images/social/Dribbble.png" alt="Dribbble"></a>
+      </div>
+    </footer>
+  </div>
+
+  <section id="popup1" class="modal-wrapper">
+    <div class="modal">
+      <form action="#" class="form" name="login">
+        <div class="form-control">
+          <label class="label">
+            <div class="label-name">Login</div>
+            <input type="text" name="login" class="username" placeholder="write your name">
+          </label>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label class="label">
+            <div class="label-name">Password</div>
+            <input type="text" name="password" class="password" placeholder="write your password">
+          </label>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation"></i>
+          <small>Error message</small>
+        </div>
+        <button class="btn">Submit</button>
+        <button class="btn open-popup" data-popup="popup2">Registration</button>
+        <button type="button" class="close"></button>
+      </form>
+    </div>
+  </section>
+
+  <section id="popup2" class="modal-wrapper">
+    <div class="modal">
+      <form action="#" class="form" id="form" name="registr">
+        <div class="form-control">
+          <label class="label">
+            <div class="label-name">Name</div>
+            <input type="text" name="username" class="username" placeholder="write your name">
+          </label>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label class="label">
+            <div class="label-name">Login</div>
+            <input type="text" name="login" class="login" placeholder="write your login">
+          </label>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label class="label">
+            <div class="label-name">Password</div>
+            <input type="text" name="password" class="password" placeholder="write your password">
+          </label>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label class="label">
+            <div class="label-name">Repeat password</div>
+            <input type="text" name="password2" class="password2" placeholder="write your password yet">
+          </label>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation"></i>
+          <small>Error message</small>
+        </div>
+        <button class="btn">Registration</button>
+        <button type="button" class="close"></button>
+      </form>
+    </div>
+  </section>
+
+  <section id="popup4" class="modal-wrapper">
+    <div class="modal delivery">
+      <button type="button" class="close"></button>
+      <div class="delivery-title">Delivery methods:</div>
+      <p>
+        New Mail (warehouse - warehouse) Free on condition
+        Orders over UAH 500. delivered free of charge
+      </p>
+      <div class="delivery-title">Ways of payment:</div>
+      <p>
+        C.O.D. Payment for the order upon receipt at the dep. companies New Mail or Address delivery.
+        According to the tariffs of the New Mail company (20 UAH registration + 2% of the payment amount)
+      </p>
+      <div class="delivery-title">Additional information on delivery and payment:</div>
+      <p>
+        Delivery to the offices of New Mail throughout Ukraine. With the help of delivery by New Mail, you can receive
+        the goods even in the most remote corners of Ukraine
+      </p>
+      <p>
+        Delivery regions:
+      </p>
+      <div>Ukraine:
+        <ul>
+          Vinnytsia region
+        </ul>
+        <ul>
+          Volyn region
+        </ul>
+        <ul>Dnipropetrovsk region:
+          <li>Dnieper</li>
+          <li>Kamenskoe</li>
+          <li>Krivoy Rog</li>
+          <li>Nikopol</li>
+          <li>Pavlograd</li>
+        </ul>
+        <ul>Donetsk region:
+          <li>Bakhmut</li>
+          <li>Gorlovka</li>
+          <li>Donetsk</li>
+          <li>Druzhkovka</li>
+          <li>Yenakiyevo</li>
+          <li>Konstantinovka</li>
+          <li>Kramatorsk</li>
+          <li>Makeevka</li>
+          <li>Mariupol</li>
+          <li>Slavyansk</li>
+        </ul>
+        <ul>Zhytomyr Oblast</ul>
+        <ul>Transcarpathian region</ul>
+        <ul>Zaporozhye region</ul>
+        <ul>Ivano-Frankivsk region</ul>
+        <ul> Kiev</ul>
+        <ul> Kiev region:
+          <li> White church</li>
+          <li> Berezan</li>
+          <li> Borispol</li>
+          <li>Brovary</li>
+          <li> Bucha</li>
+          <li> Vasilkov</li>
+          <li>Vyshgorod</li>
+          <li> Irpin</li>
+          <li> Obukhov</li>
+          <li>Pereyaslav-Khmelnitsky</li>
+          <li>Rzhishchev</li>
+          <li>Slavutich</li>
+          <li> Ukrainian</li>
+          <li>Fastov</li>
+          <li>Yagotin</li>
+        </ul>
+        <ul>Kirovograd region</ul>
+        <ul>Crimea</ul>
+        <ul>Lugansk region</ul>
+        <ul>Lviv region</ul>
+        <ul>Nikolaevkskaya area</ul>
+        <ul> Odessa region</ul>
+        <ul>Poltava region</ul>
+        <ul>Rivne region</ul>
+        <ul>Sumy region:
+          <li>Konotop</li>
+          <li>Sumy</li>
+          <li>Shostka</li>
+        </ul>
+        <ul>Ternopil region</ul>
+        <ul>Kharkov region</ul>
+        <ul>Kherson region</ul>
+        <ul>Khmelnitsky region</ul>
+        <ul>Cherkasy region</ul>
+        <ul>Chernihiv region</ul>
+        <ul>Chernivtsi region</ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="popup5" class="modal-wrapper">
+    <div class="modal opening">
+      <button type="button" class="close"></button>
+      <table>
+        <tr class="opening-head">
+          <th>Day</th>
+          <th>Time to work</th>
+          <th class="break">Break</th>
+        </tr>
+        <tr>
+          <td>Monday</td>
+          <td>9:00 - 18:00</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>9:00 - 18:00</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>9:00 - 18:00</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>9:00 - 18:00</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>9:00 - 18:00</td>
+        </tr>
+        <tr class="weekend">
+          <td>Saturday</td>
+          <td>weekend</td>
+        </tr>
+        <tr class="weekend">
+          <td>Sunday</td>
+          <td>weekend</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="popup6" class="modal-wrapper">
+    <div class="modal contact">
+      <button type="button" class="close"></button>
+      <table>
+        <tr>
+          <td>Phone:</td>
+          <td>+380673369923, KievStar</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>+380666716959, MTS / Vodafone</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>+380631110055, Life / Viber</td>
+        </tr>
+        <tr>
+          <td>The contact person:</td>
+          <td>manager Lilia</td>
+        </tr>
+        <tr>
+          <td>Adress:</td>
+          <td>Ukraine, Kiev</td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td class="contact-email">info@bloral.com.ua</td>
+        </tr>
+        <tr>
+          <td>Skype:</td>
+          <td>bloral.co</td>
+        </tr>
+        <tr>
+          <td>Viber:</td>
+          <td>+380631110055</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="popup7" class="modal-wrapper">
+    <div class="modal return">
+      <button type="button" class="close"></button>
+      <p>
+        The company is guided by the Law <a href="https://zakon.rada.gov.ua/laws/show/1023-12#Text">"On Protection of
+        Consumer Rights"</a> in matters of return and exchange of goods of good quality.
+      </p>
+      <p>
+        According to the Law <a href="https://zakon.rada.gov.ua/laws/show/1023-12#Text">"On Protection of Consumer
+        Rights"</a>, the company may refuse to exchange and return goods of
+        good quality to the consumer if they belong to the categories specified in the current <a
+        href="https://zakon.rada.gov.ua/laws/show/172-94-%D0%BF#Text">List of non-food goods of
+        good quality that cannot be returned or exchanged.</a>
+      </p>
+      <p>
+        Good quality items eligible for returns and exchanges may be returned within 14 days of buyer's receipt if:
+       <ul>
+         <li> the product was not in use and does not have traces of consumer use: scratches, chips, abrasions, stains, etc .;</li>
+         <li>the goods are fully completed and the original packaging is preserved;</li>
+         <li>all labels and factory markings have been preserved;</li>
+         <li>the product retains its presentation and its consumer properties.</li>
+       </ul>
+      </p>
+    </div>
+  </section>
+
+
+</body>
+
+</html>

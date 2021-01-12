@@ -1,0 +1,42 @@
+[
+  {
+    "id": "category1",
+    "name": "Earrings"
+  },
+  {
+    "id": "category2",
+    "name": "Rings"
+  },
+  {
+    "id": "category3",
+    "name": "Chains"
+  },
+  {
+    "id": "category4",
+    "name": "Bracelets"
+  },
+  {
+    "id": "category5",
+    "name": "Pendants"
+  },
+  {
+    "id": "category6",
+    "name": "Belts"
+  },
+  {
+    "id": "category7",
+    "name": "Sets"
+  },
+  {
+    "id": "category8",
+    "name": "Necklace"
+  },
+  {
+    "id": "category9",
+    "name": "Brooch"
+  },
+  {
+    "id": "category10",
+    "name": "Hairpins"
+  }
+]

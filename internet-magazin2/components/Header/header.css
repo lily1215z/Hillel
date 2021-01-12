@@ -1,0 +1,19 @@
+
+.header-counter {
+    font-size: 12px;
+}
+.cart-login-block {
+    position: relative;
+}
+.cart-counter {
+    position: absolute;
+    top: 0px;
+    right: -20px;
+    padding: 5px 5px;
+    border-radius: 10px;
+    background-color: rgb(222, 251, 249);
+}
+
+.header-container {
+    border: 1px solid red;
+}
